@@ -1,0 +1,342 @@
+%-------------------------
+% CV in Latex
+% Author : Yuchong Pan
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\researchItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\manuscriptItem}[1]{
+  \item #1 \vspace{-7pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\researchExperience}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\awardSubItem}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://ypan.me/}{\Large Yuchong Pan}} & Email : \href{mailto:yuchong@mit.edu}{yuchong@mit.edu}\\
+  \href{https://ypan.me/}{https://ypan.me} & Mobile : +1 (617) 749-5906 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Massachusetts Institute of Technology}{Cambridge, MA}
+      {Ph.D., Applied Mathematics}{September 2021 -- May 2026 (anticipated)}
+      \resumeItemListStart
+          \resumeItem{GPA}{5.0/5.0}
+          \resumeItem{Research Interests}
+            {Algorithms, combinatorics, optimization, theoretical computer science, operations research, network flow algorithms, traveling salesman problem, submodular optimization, graph algorithms, graph theory}
+          \resumeItem{Relevant Coursework}{Modern Discrete Probability, An Algorithmist's Toolkit, Randomness and Computation, Algebraic Methods in Extremal Graph Theory, Matrix Multiplication and Graph Algorithms, Graph Theory and Additive Combinatorics, Recent Progress in Combinatorial Optimization (directed reading)}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of British Columbia}{Vancouver, BC}
+      {B.Sc., Combined Honours Computer Science and Mathematics, with Distinction}{September 2017 -- May 2021}
+      \resumeItemListStart
+        \resumeItem{GPA}{94.4\%}
+        \resumeItem{Thesis}{\emph{Optimization Problems on Network Flows with Degree Constraints}, advised by F.\ Bruce Shepherd [\href{https://ypan.me/docs/ug-thesis.pdf}{Link}]}
+      %     \resumeItem{Overall Grade Average}
+      %       {94.4\%}
+      %     \resumeItem{Coursework}
+      %       {Combinatorial Optimization$^*$, Submodular Optimization$^*$, Tools for Modern Algorithm Analysis$^*$, Applications of Linear Algebra in TCS$^*$, Probability$^*$, Stochastic Processes$^*$, Complexity Theory$^*$, Real Analysis$^*$ \\ {\small \begin{flushright}
+      %         \vspace{-.09in}
+      %         $^*$graduate courses
+      %         \vspace{-.2in}
+      %       \end{flushright}}}
+        \resumeItem{Relevant Coursework}{Combinatorial Optimization, Submodular Optimization, Tools for Modern Algorithm Analysis, Applications of Linear Algebra in Theoretical Computer Science, Complexity Theory, Real Analysis, Measure-Theoretic Probability and Stochastic Processes}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Employment}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Massachusetts Institute of Technology}{Cambridge, MA}{Mentor}{January 2022 -- February 2022}
+    \resumeItemListStart
+      \resumeItem{Directed Reading Program}{Mentored two undergraduate students to read \emph{Randomized Algorithms} by Motwani and Raghavan. Advised the students on the presentations in the program symposium.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {University of British Columbia}{Vancouver, BC}
+    {Research Assistant}{April 2021 -- August 2021}
+    \resumeItemListStart
+      \resumeItem{Cost and Congestion of Exotic Network Flows}
+        {Studied new network flow models with side constraints imposed by new telecommunication technologies (e.g., IP routing, optical networks, etc.). This research assistantship is partially funded by a Work Learn International Undergraduate Research Award.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {Microsoft}{Vancouver, BC}
+    {Software Engineer Intern}{May 2020 -- August 2020}
+    \resumeItemListStart
+      \resumeItem{.NET Runtime IL Interpreter}
+        {Resurrected the IL (intermediate language) interpreter inside .NET Runtime. Conducted performance analyses for the various configurations of the IL interpreter. [\href{https://github.com/dotnet/runtime}{GitHub}]}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Microsoft}{Redmond, WA}
+      {Software Engineer Intern}{June 2019 -- August 2019}
+      \resumeItemListStart
+        \resumeItem{.NET Core Uninstall Tool}
+          {A guided tool that enables the controlled clean-up of a system such that only the desired versions of .NET Core SDKs and Runtimes remain. Prepared user documentation. Released as an open source command-line tool by Microsoft to external users. [\href{https://github.com/dotnet/cli-lab}{GitHub}] [\href{https://devblogs.microsoft.com/dotnet/announcing-the-net-core-uninstall-tool-1-0/}{Blog}] [\href{https://docs.microsoft.com/dotnet/core/additional-tools/uninstall-tool}{Documentation}]}
+        \resumeItem{MSBuild Binary Log Query Language}
+          {A domain-specific language extending XPath (XML Path Language) that provides multiple search operators for advanced queries on the target graph parsed from MSBuild binary logs.}
+      \resumeItemListEnd
+
+     \resumeSubheading
+       {Microsoft}{Vancouver, BC}
+       {Software Engineer Intern}{May 2018 -- August 2018}
+       \resumeItemListStart
+         \resumeItem{Earth Lens}
+           {An open-source project for iPad that identifies, tracks, and analyzes objects in aerial imagery to assist in disaster relief and environmental conservation. The project uses Xamarin and CoreML. [\href{https://github.com/microsoft/Earth-Lens}{GitHub}] [\href{https://www.microsoft.com/en-us/garage/blog/2018/10/new-garage-project-earth-lens-pairs-ai-with-aerial-imagery/}{Blog}]}
+       \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Sogou}{Beijing, China}
+    %   {Software Engineer Intern}{May 2017 -- July 2017}
+    %   \resumeItemListStart
+    %     \resumeItem{Speech-Recognition \& OCR Proofreading Tools}
+    %       {Web apps for internal proofreading and testing of AI-Cloud speech recognition and OCR services; based on Bootstrap, Vue.js, Flask and Docker.}
+    %     \resumeItem{Receipt Recognition Service}
+    %       {A service for receipt format and content recognition; based on Flask, scikit-image and Sogou AI-Cloud OCR Service; used for reimbursement management of Sogou's financial department.}
+    %   \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {THE Hack}{Shanghai, China}
+    %  {Co-Founder, Chief Technology Officer}{February 2017 -- July 2018}
+    %  \resumeItemListStart
+    %    \resumeItem{Corporate Relations}
+    %      {Negotiated sponsorships and partnerships from big corporations, including Google, Apple, Sogou and Wolfram, venture capitals and incubators.}
+    %    \resumeItem{Technological Support}
+    %      {Directed and supervised full-stack software development; designed and implemented event websites using Docker, Django and Vue.js; see \url{thehack.org.cn}, \url{hackinit.org} and \url{hackshanghai.com}.}
+    %  \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {InitialView}{Beijing, China}
+    %  {Software Engineer Intern}{September 2016 -- May 2017}
+    %  \resumeItemListStart
+    %    \resumeItem{Web and App Development}
+    %      {Implemented server end, booking system, user portals, video players and blog; refactored homepage. Implemented a cross-platform app for iOS and Android based on Ionic and AngularJS.}
+    %  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+% \section{Selected Projects}
+%   \resumeSubHeadingListStart
+%     %\resumeSubItem{THE Hack}
+%     %  {The largest hackathon in China with 500 participants, 2,000 applicants from over 400 schools and 8 countries; served as Co-Founder, Director of Technology, and Co-Director of Corporate Relations. [\href{https://2018.thehack.org.cn/}{Website}]}
+%     %\resumeSubItem{Gradual Typing of Recursive Types}{Applied abstract gradual typing to recursive types to obtain static and dynamic semantics for gradual typing, enabling programming languages to combine dynamic and static checking.}
+%     \resumeSubItem{Directed Reading on the Traveling Salesman Problem (TSP)}{Ongoing directed reading project on recent progress of the approximability of TSP and background results, advised by Prof.\ Michel X.\ Goemans at MIT.}
+%     \resumeSubItem{Extending the Gy\H{o}ri-Lov\'{a}sz Theorem}{On ongoing research project on finding a constructive proof for the Gy\H{o}ri-Lov\'{a}sz theorem, an important result in graph theory. Collaborating with Prof.\ F.\ Bruce Shepherd at UBC.}
+%     %\resumeSubItem{Gradual Octave}
+%     %  {Extended the Octave programming language with a gradual type system, incorporating benefits of both static and dynamic type systems. [\href{https://ypan.me/docs/gradual-octave.pdf}{Report}] [\href{https://github.com/yuchong-pan/gradual-octave}{GitHub}]}
+%     \resumeSubItem{MiniJava Compiler}
+%       {MiniJava is a subset of the Java language. Implemented a MiniJava-to-x64 compiler, including phases of frontend, intermediate representation, code generation, and optimization.}
+%     %\resumeSubItem{Vox}
+%     %  {A tool that utilizes speech recognition and natural language processing to enable vertical search and visualization for audio and video documents; based on D3.js, Django and Microsoft Cognitive Services.}
+%     %\resumeSubItem{GitArt}
+%     %  {A Git-like idea-sharing and collaboration platform for artists and writers; based on Django and Bootstrap.}
+%     %\resumeSubItem{Viso}
+%     %  {An online coding interview platform with hardware anti-cheat system; based on Flask and Leap Motion.}
+%     %\resumeSubItem{Aquatopia}
+%     %  {A monitoring, alerting and visualization system for environmental data; based on Django and Arduino.}
+%     %\resumeSubItem{HackSearch}
+%     %  {A vertical, distributed search engine for specialized fields; based on Elasticsearch, D3.js and Golang.}
+%   \resumeSubHeadingListEnd
+
+%-----------Reseach Experience-----
+\section{Research/Directed Reading Experience}
+  \resumeSubHeadingListStart
+    \researchExperience
+    {Directed Reading on the Traveling Salesman Problem}{September 2021 -- present}
+    \resumeItemListStart
+        \researchItem{An ongoing directed reading project on recent development on the approximability of the traveling salesman problem (TSP), including the $(3/2 - \varepsilon)$-approximation algorithm of the metric TSP problem and the $(3/2 - \varepsilon)$ bound on the integrality gap of the subtour LP for TSP, both by Karlin, Klein and Oveis Gharan. Advised by Prof.\ Michel X.\ Goemans at Massachusetts Institute of Technology.}
+        \researchItem{Studied background materials which form key ingredients of recent developments on TSP, including the cactus and deformable polygon representations of near-minimum-cuts.}
+    \resumeItemListEnd
+    \researchExperience
+      {Extending the Gy\H{o}ri-Lov\'{a}sz Theorem}{April 2021 -- present}
+      \resumeItemListStart
+          \researchItem{An ongoing research project on finding an algorithmic proof for the Gy\H{o}ri-Lov\'{a}sz theorem, an important result in graph theory. In collaboration with Prof.\ F.\ Bruce Shepherd at the University of British Columbia.}
+      \resumeItemListEnd
+    \researchExperience
+      {Optimization problems on network flows with side constraints}{September 2020 -- April 2021}
+      \resumeItemListStart
+        \researchItem{Studied several optimization problems on network flows with side constraints (i.e., unsplittable, confluent, and $d$-furcated flows) imposed by new telecommunication technologies such as IP routing and optical networks. Advised by Prof.\ F.\ Bruce Shepherd at the University of British Columbia.}
+        \researchItem{Studied algorithms on these optimization problems, e.g.\ for congestion minimization, the $2$-approximation algorithm for single-sink unsplittable flows by Dinitz et al.\ (1999), the $O(1 + \log k)$-approximation algorithm for confluent flows by Chen et al.\ (2004), and the $2$-approximation algorithm for bifurcated flows by Donovan et al.\ (2007).}
+        \researchItem{Attempted open questions relevant to these optimization problems, including Michel X.\ Goemans' $2$-congestion conjecture for the cost version of congestion minimization problem on single-sink unsplittable flows, constant congestion for bifurcated flows, and constant confluent rounds to route all demands.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------Teaching Experience----
+\section{Teaching Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Vancouver, BC}
+      {Teaching Assistant}{}
+      \resumeItemListStart
+        \resumeItem{CPSC 420 Advanced Algorithms Design and Analysis}{Spring 2021}
+        \resumeItem{CPSC 311 Definition of Programming Languages}{Fall 2020}
+        \resumeItem{CPSC 421/501 Introduction to Theory of Computing (graduate-level)}{Fall 2019}
+        \resumeItem{CPSC 121 Models of Computation}{Fall 2018}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------Mentoring Experience---
+\section{Mentoring Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Massachusetts Institute of Technology}{Cambridge, MA}
+    {Directed Reading Program (Department of Mathematics)}{January 2022 -- February 2022}
+    \resumeItemListStart
+      \researchItem{Mentored two undergraduate students to read \emph{Randomized Algorithms} by Motwani and Raghavan. Advised the students on the presentation in the directed reading program symposium.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------Manuscripts------------
+\section{Manuscripts}
+  \resumeSubHeadingListStart
+    \manuscriptItem{Optimization Problems on Network Flows with Degree Constraints. Undergraduate
+    honours thesis, University of British Columbia, 2021. [\href{https://ypan.me/docs/ug-thesis.pdf}{Link}]}
+    \manuscriptItem{Unsplittable Flow Problem on Paths and Trees: Closing the LP Relaxation Integrality Gap (with A.\ Jozefiak). UBC CPSC 531F project, 2019. [\href{https://ypan.me/docs/ufp-survey.pdf}{Link}]}
+  \resumeSubHeadingListEnd
+
+%-----------Talks and Presentations
+\vspace{-5pt}
+\section{Talks and Presentations}
+\resumeSubHeadingListStart
+  \manuscriptItem{\emph{Roundtrip Spanners and Roundtrip Routing in Directed Graphs} by Roditty, Thorup, and Zwick (2008). MIT 6.890 project. Massachusetts Institute of Technology.
+  Cambridge, MA. 2021. [\href{https://ypan.me/docs/roundtrip-slides.pdf}{Slides}]}
+  \manuscriptItem{On the Sensitivity of Boolean Functions. UBC CPSC 531F project. University of
+  British Columbia. Online. 2021. [\href{https://ypan.me/docs/sensitivity-slides.pdf}{Slides}]}
+  \manuscriptItem{Perturbation-Stable Maximum Cuts. Algorithms Reading Group, UBC Department of Computer
+  Science. University of British Columbia. Online. 2020. [\href{https://ypan.me/docs/maxcut.pdf}{Slides}]}
+  \manuscriptItem{Unsplittable Flow Problem on Paths and Trees: Closing the LP Relaxation Integrality Gap (with A.\ Jozefiak). UBC CPSC 531F project. University of British
+  Columbia. Vancouver, BC. 2019. [\href{https://ypan.me/docs/ufp-slides.pdf}{Slides}]}
+\resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \awardSubItem{Graduation with Distinction}{2021}
+    \awardSubItem{Science Scholar / Dean's Honour List}{2018, 2019, 2020, 2021}
+    \awardSubItem{Work Learn International Undergraduate Research Award}{2021}
+    \awardSubItem{Stanley M Grant Scholarship in Mathematics}{2019, 2021}
+    \awardSubItem{Faculty of Science International Student Scholarship}{2018, 2019, 2020}
+    \awardSubItem{J Fred Muir Memorial Scholarship in Science}{2020}
+    \awardSubItem{Trek Excellence Scholarship}{2018, 2019, 2020}
+    \awardSubItem{Dean of Science Scholarship}{2018, 2019}
+    \awardSubItem{Marie Kendall Memorial Scholarship in Science}{2018}
+    \awardSubItem{Joel Harold Marcoe Memorial Scholarship}{2018}
+    %\awardSubItem{27th Place, North American Invitational Programming Contest Open Division}{2018}
+    \awardSubItem{11th Place, ACM International Collegiate Programming Contest Pacific NW Region}{2017}
+    \awardSubItem{1st Place, Microsoft College Code Competition}{2017}
+    %\awardSubItem{1st Place, i-Lab Hackathon}{June 2017}
+    %\awardSubItem{2nd Place, Hack\{Nanjing\}}{May 2017}
+    \awardSubItem{Outstanding International Student Award}{2017}
+    \awardSubItem{Silver Medal, China Team Selection Competition for International Olympiad in Informatics}{2015}
+    \awardSubItem{Bronze Medal, Asia Pacific Informatics Olympiad}{2015}
+    \awardSubItem{First Prize, National Olympiad in Informatics in Provinces (China)}{2013, 2014}
+  \resumeSubHeadingListEnd
+
+%--------PROFESSIONAL SERVICES---------
+\section{Professional Services}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Journal Review}{SIAM Journal on Discrete Mathematics (SIDMA)}
+    \resumeSubItem{Conference Review}{ACM-SIAM Symposium on Discrete Algorithms (SODA 2021)}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {C++, Python, Java, C\#, SQL, MATLAB, Go, JavaScript, \LaTeX} \\
+    %\resumeSubItem{Technologies}
+    %  {Django, Flask, Tornado, Microservices, Bootstrap, Vue.js, AngularJS, D3.js, Node.js, Marko.js, Ionic, Nginx, Redis, Docker, Amazon AWS, Microsoft Azure, .NET, Xamarin, Microsoft Build Engine (MSBuild)} \\
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
